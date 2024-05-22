@@ -12,12 +12,13 @@ namespace TaskManagerAPI.Models
 
         public string? Description { get; set; }
 
-        public bool Completed { get; set; }
-
         public DateTime? DueDate { get; set; }
 
         [Required]
         public DateTime CreationDate { get; set; }
+
+        [Required]
+        public bool Completed { get; set; }
 
         public int UserId { get; set; }
     }
